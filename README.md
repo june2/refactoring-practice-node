@@ -31,6 +31,11 @@ $ node -v
 ---
 ### test 코드 실행 법
 ```sh
+## npm 사용시
+$ npm run test
+$ npm run test:watch # watch 모드 실행법
+
+## yarn 사용시
 $ yarn test
 $ yarn test:watch # watch 모드 실행법
 ```
