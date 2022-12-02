@@ -40,3 +40,8 @@ $ nvm ls
 node -> stable (-> N/A) (default)
 iojs -> N/A (default)
 ```
+
+### 6. Node 설치
+```
+$ nvm install 18.12.1
+```
