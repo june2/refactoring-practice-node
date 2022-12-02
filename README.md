@@ -7,6 +7,7 @@
     - https://nodejs.org
 - NVM활용 Node 설치
   - `NVM(Node Version Manager)`은 node버전 관리 도구를 말합니다.
+  - [NVM 설치방법](https://github.com/june2/refactoring-practice-node/blob/main/README_NVM.md)
   
 ---
 ### test 코드 실행 법
