@@ -1,5 +1,5 @@
-import { strict as assert } from "node:assert";
 import test from "node:test";
+import { strict as assert } from "node:assert";
 import { Order } from ".";
 
 test("quantity * price 값이 1000 초과할때", () => {
