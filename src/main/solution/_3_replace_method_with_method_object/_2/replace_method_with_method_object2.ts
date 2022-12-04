@@ -33,7 +33,7 @@ export class ReplaceMethodWithMethodObject2 {
         })
         outstanding4 += outstanding1 + outstanding2 + outstanding3;
 
-        console.log("name : " + name);
+        console.log("name : " + this.name);
         console.log("amount1 : " + outstanding1);
         console.log("amount2 : " + outstanding2);
         console.log("amount3 : " + outstanding3);
