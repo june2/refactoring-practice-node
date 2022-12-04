@@ -3,7 +3,6 @@ import { strict as assert } from "node:assert";
 import sinon from 'sinon';
 import { ExtractMethod } from "../../../main/solution/_1_extract_method/extract-method";
 
-
 let spy = sinon.spy(console, 'log');
 
 test("이름과 금액값 리스트를 입력으로 받을 경우 올바른 출력 확인", () => {

@@ -18,18 +18,25 @@ export class ReplaceTempWithQuery4 {
   // 1. 테스트 코드 작성 - ReplaceTempWithQuery1Test의 getPrice 메소드를 테스트하는 코드를 그대로 사용해도 무방
   // 2. Separate Query from Modifier 를 이용하여 아래의 메소드를 순수함수(메소드)로 만들어 보기
   // 3. ReplaceTempWithQuery1에서 정의된 getPrice메소드와 동일한 기능을 가지도록 메소드 분리해보기
-  getPrice() {
+  getPrice(): number {
+    this.increaseQuantity();
+    this.decreaseItemPrice();
+    return this.getBasePrice() * this.getDiscountFactor();
+  }
+
+  getBasePrice(): number {
+    return this.quantity * this.itemPrice;
+  }
+
+  getDiscountFactor(): number {
+    return (this.getBasePrice() > 1000) ? 0.95 : 0.98;
+  }
+
+  increaseQuantity(): void {
     this.quantity++;
+  }
+
+  decreaseItemPrice(): void {
     this.itemPrice -= 100;
-    let basePrice = this.quantity * this.itemPrice;
-
-    let discountFactor: number;
-    if (basePrice > 1000) {
-      discountFactor = 0.95;
-    } else {
-      discountFactor = 0.98;
-    }
-
-    return basePrice * discountFactor;
   }
 }

@@ -24,17 +24,27 @@ export class ExtractMethod {
     // 7. 지역변수 대신 메소드 대체 하기
     // 8. 미사용 지역변수 삭제
     public printOwing() {
+        this.printBanner();
+        this.printDetails(this.getOutstanding());
+    }
+
+    printBanner() {
         // A - 지역 변수 없는 경우
         console.log(`*************************`);
         console.log(`***** Customer Owes *****`);
         console.log(`*************************`);
+    }
 
+    getOutstanding() {
         // B - 지역 변수에 다른 값을 여러 번 대입하는 경우
-        let outstanding = 0.0;
+        let result = 0.0;
         for (let amount of this.amounts) {
-            outstanding += amount;
+            result += amount;
         }
+        return result;
+    }
 
+    printDetails(outstanding: number) {
         // C - 지역 변수가 포함되어 있는 경우
         console.log("name : " + this.name);
         console.log("amount : " + outstanding);

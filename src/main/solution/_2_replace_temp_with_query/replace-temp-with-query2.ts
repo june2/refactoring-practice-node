@@ -13,17 +13,19 @@ export class ReplaceTempWithQuery2 {
   // 3. Split Temporary Variable(변수쪼개기)는 또다른 임시변수를 선언하는 것
   // 4. 임시변수에 값이 여러번 대입되면 코드를 읽는 이에게 커다른 혼란을 주기 때문에 Split Temporary Variable를 시도함
   getPrice() {
-    let basePrice = this.quantity * this.itemPrice;
-
-    let discountFactor: number;
-    if (basePrice > 1000) {
-      discountFactor = 0.95;
-    } else {
-      discountFactor = 0.98;
-    }
-
-    basePrice = this.itemPrice * 2;
-
-    return basePrice * discountFactor;
+    return this.getTwoItemPrice() * this.getDiscountFactor();
   }
+
+  getDiscountFactor(): number {
+    return (this.getBasePrice() > 1000) ? 0.95 : 0.98;
+  }
+
+  getBasePrice(): number {
+    return this.quantity * this.itemPrice;
+  }
+
+  getTwoItemPrice(): number {
+    return this.itemPrice * 2;
+  }
+
 }

@@ -12,15 +12,14 @@ export class ReplaceTempWithQuery1 {
   // 2. Extract Method 를 이용하여 아래 메소드를 2개의 메소드로 구성되도록 리팩토링
   // 3. Extract Method 절차가 기억나지 않으면 _1_extract_method의 ExtractMethod 클래스의 TODO를 참고
   getPrice() {
-    let basePrice = this.quantity * this.itemPrice;
+    return this.getBasePrice() * this.getDiscountFactor();
+  }
 
-    let discountFactor: number;
-    if (basePrice > 1000) {
-      discountFactor = 0.95;
-    } else {
-      discountFactor = 0.98;
-    }
+  getDiscountFactor(): number {
+    return (this.getBasePrice() > 1000) ? 0.95 : 0.98;
+  }
 
-    return basePrice * discountFactor;
+  getBasePrice(): number {
+    return this.quantity * this.itemPrice;
   }
 }
