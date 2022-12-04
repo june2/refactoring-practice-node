@@ -20,3 +20,13 @@ $ npm run test:watch # watch 모드 실행법
 $ yarn test
 $ yarn test:watch # watch 모드 실행법
 ```
+
+```sh
+## 폴더/파일 별로 테스트 방법
+$ node --test --require ts-node/register src/test/solution/{파일_path}.ts
+$ node --test --require ts-node/register src/test/solution/{폴더명}*/**/*.ts
+
+## watch 모드 실행법
+$ node --watch --require ts-node/register src/test/solution/{파일_path}.ts
+$ node --watch --require ts-node/register src/test/solution/{폴더명}*/**/*.ts
+```
