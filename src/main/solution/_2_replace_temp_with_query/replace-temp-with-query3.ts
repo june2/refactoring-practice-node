@@ -12,7 +12,7 @@ export class ReplaceTempWithQuery3 {
   // 2. outstanding1 ~ 4 까지 변수의 최종값에 대한 질의함수 만들기
   // 3. 2에서 만든 질의함수를 사용하여 임시변수(지역변수)를 제거
   // 4. 표준출력문만 남겨보기
-  getPrice() {
+  printOwing() {
     let outstanding1: number = 0.0;
     let outstanding2: number = 0.0;
     let outstanding3: number = 0.0;
@@ -25,7 +25,7 @@ export class ReplaceTempWithQuery3 {
     })
     outstanding4 += outstanding1 + outstanding2 + outstanding3;
 
-    console.log("name : " + name);
+    console.log("name : " + this.name);
     console.log("amount1 : " + outstanding1);
     console.log("amount2 : " + outstanding2);
     console.log("amount3 : " + outstanding3);
