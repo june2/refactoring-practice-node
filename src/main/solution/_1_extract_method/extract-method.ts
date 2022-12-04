@@ -39,5 +39,4 @@ export class ExtractMethod {
         console.log("name : " + this.name);
         console.log("amount : " + outstanding);
     }
-
 }
