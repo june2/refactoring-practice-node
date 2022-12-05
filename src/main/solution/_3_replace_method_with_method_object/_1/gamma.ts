@@ -1,18 +1,14 @@
 import { ReplaceMethodWithMethodObject1 } from "./replace_method_with_method_object1";
 
 export class Gamma {
-    private account: ReplaceMethodWithMethodObject1;
-    private inputVal: number;
-    private quantity: number;
+    private account: ReplaceMethodWithMethodObject1;    
     private yearToDate: number;
     private importantValue1: number;
     private importantValue2: number;
     private importantValue3: number;
 
     constructor(account: ReplaceMethodWithMethodObject1, inputVal: number, quantity: number, yearToDate: number) {
-        this.account = account;
-        this.inputVal = inputVal;
-        this.quantity = quantity;
+        this.account = account;        
         this.yearToDate = yearToDate;
         this.importantValue1 = (inputVal * quantity) + this.account.getDelta();
         this.importantValue2 = (inputVal * yearToDate) + 100;
