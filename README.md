@@ -1,5 +1,7 @@
 ## Repactoring Practice Node
 - Node 18v 버전 설치가 필요합니다.
+   - [watch mode](https://nodejs.org/en/blog/release/v18.11.0/)
+   - [test runner](https://nodejs.org/dist/latest-v18.x/docs/api/test.html)
 
 ## Node 설치 방법
 - Node 공식홈페이지 다운로드 설치
@@ -12,21 +14,23 @@
 ```sh
 ## npm 사용시
 $ npm run test
-$ npm run test:watch # watch 모드 실행법
+$ npm run test:watch {파일_path} # watch 모드 실행법
+$ npm run test:watch src/test/soultion/_1*/*.test.ts
 
 ## yarn 사용시
-$ yarn test
-$ yarn test:watch # watch 모드 실행법
+$ yarn test 
+$ yarn test:watch {파일_path} # watch 모드 실행법
+$ yarn test:watch src/test/soultion/_1*/*.test.ts
 ```
 
 ```sh
 ## 폴더/파일 별로 테스트 방법
 $ node --test --require ts-node/register src/test/solution/{파일_path}.ts
-$ node --test --require ts-node/register src/test/solution/{폴더명}*/**/*.ts
+$ node --test --require ts-node/register src/test/solution/{폴더명}/*.ts
 
 ## watch 모드 실행법
 $ node --watch --require ts-node/register src/test/solution/{파일_path}.ts
-$ node --watch --require ts-node/register src/test/solution/{폴더명}*/**/*.ts
+$ node --watch --require ts-node/register src/test/solution/{폴더명}/*.ts
 ```
 
 ## 🔍 진행 방식
@@ -81,4 +85,3 @@ $ node --watch --require ts-node/register src/test/solution/{폴더명}*/**/*.ts
       - 메소드의 이름을 따서 새로운 클래스 생성
       - printOwing 메소드내, 새로운 클래스의 메소드를 호출하도록 리팩터링
       <br>
-      
