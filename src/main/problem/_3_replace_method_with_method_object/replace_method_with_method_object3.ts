@@ -1,4 +1,4 @@
-export class ReplaceMethodWithMethodObject1 {
+export class ReplaceMethodWithMethodObject3 {
     private delta: number;
 
     constructor(delta: number) {

@@ -16,13 +16,13 @@
 $ npm run install # node_modules 설치
 $ npm run test
 $ npm run test:watch {파일_path} # watch 모드 실행법
-$ npm run test:watch src/test/soultion/_1*/*.test.ts
+$ npm run test:watch src/test/solution/_1*/*.test.ts
 
 ## yarn 사용시
 $ yarn install # node_modules 설치
 $ yarn test 
 $ yarn test:watch {파일_path} # watch 모드 실행법
-$ yarn test:watch src/test/soultion/_1*/*.test.ts
+$ yarn test:watch src/test/solution/_1*/*.test.ts
 ```
 
 ```sh
