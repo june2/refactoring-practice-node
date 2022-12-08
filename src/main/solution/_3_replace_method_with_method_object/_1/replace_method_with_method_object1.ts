@@ -1,17 +1,13 @@
-import { Gamma } from "./gamma";
+import { MethodObject } from "./MethodObject";
 
 export class ReplaceMethodWithMethodObject1 {
-    private delta: number;
+    private six: number = 6;
 
-    constructor(delta: number) {
-        this.delta = delta;
+    manyTempVariablesExist(seven: number): void {
+        new MethodObject(this, seven).manyTempVariablesExist();
     }
 
-    gamma(inputVal: number, quantity: number, yearToDate: number) {
-        return new Gamma(this, inputVal, quantity, yearToDate).compute();
-    }
-
-    getDelta() {
-        return this.delta;
+    getSix(): number {
+        return this.six;
     }
 }

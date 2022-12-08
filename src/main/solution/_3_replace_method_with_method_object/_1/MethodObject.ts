@@ -1,4 +1,4 @@
-import { ReplaceMethodWithMethodObject1 } from "./replace_method_with_method_object3";
+import { ReplaceMethodWithMethodObject1 } from "./replace_method_with_method_object1";
 
 export class MethodObject {
     private replaceMethodWithMethodObject1: ReplaceMethodWithMethodObject1;
