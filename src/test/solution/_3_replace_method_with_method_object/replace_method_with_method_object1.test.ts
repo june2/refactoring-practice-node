@@ -10,7 +10,7 @@ test("계산 결과값 데이터를 출력한다", () => {
     const seven = 7;
     const replaceMethodWithMethodObject1 = new ReplaceMethodWithMethodObject1()
     //when
-    replaceMethodWithMethodObject1.manyTempVariablesExist(seven);
+    replaceMethodWithMethodObject1.printNumberAndStatistics(seven);
     //then
     assert.strictEqual(spy.calledWith('one = 1'), true);
     assert.strictEqual(spy.calledWith('two = 2'), true);

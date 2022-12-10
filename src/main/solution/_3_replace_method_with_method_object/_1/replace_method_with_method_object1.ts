@@ -1,7 +1,7 @@
 export class ReplaceMethodWithMethodObject1 {
     private six: number = 6;
 
-    manyTempVariablesExist(seven: number): void {
+    printNumberAndStatistics(seven: number): void {
         const one: number = 1;
         const two: number = 2;
         const three: number = 3;
