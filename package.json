@@ -1,8 +1,9 @@
 {
   "name": "refactoring",
+  "description": "refactoring-practice-node",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "author": "june",
+  "license": "MIT",  
   "scripts": {    
     "test": "node --test --require ts-node/register src/test/solution/**/*.ts",
     "test:watch": "node --watch --require ts-node/register"
