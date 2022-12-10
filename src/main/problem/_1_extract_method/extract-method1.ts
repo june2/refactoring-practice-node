@@ -1,4 +1,4 @@
-export class ExtractMethod {
+export class ExtractMethod1 {
     private name: string;
     private amounts: Array<number>;
 
@@ -9,7 +9,6 @@ export class ExtractMethod {
 
     //TODO : 다음의 메소드를 Extract Method(메소드추출법)을 이용하여 3개의 의미 있는 메소드로 나누어서 리팩토링 해보세요.
     //메소드설명 : 고객이 미지불한 부채 금액을 계산하여 이름과 부채 총량을 출력하는 기능을 수행
-    //refactoring short-cut : command+.
     public printOwing() {
         // A - 지역 변수 없는 경우
         console.log(`*************************`);
@@ -26,4 +25,5 @@ export class ExtractMethod {
         console.log("name : " + this.name);
         console.log("amount : " + outstanding);
     }
+
 }

@@ -1,4 +1,4 @@
-export class ExtractMethod {
+export class ExtractMethod1 {
     private name: string;
     private amounts: Array<number>;
 
